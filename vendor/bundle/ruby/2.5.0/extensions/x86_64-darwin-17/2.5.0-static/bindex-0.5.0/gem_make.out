@@ -1,0 +1,15 @@
+current directory: /Users/tatsuya/rails-space/application/RailsSampleApp/vendor/bundle/ruby/2.5.0/gems/bindex-0.5.0/ext/bindex
+/Users/tatsuya/.rbenv/versions/2.5.1/bin/ruby -r ./siteconf20181004-31844-1g562g5.rb extconf.rb
+creating Makefile
+
+current directory: /Users/tatsuya/rails-space/application/RailsSampleApp/vendor/bundle/ruby/2.5.0/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR=" clean
+
+current directory: /Users/tatsuya/rails-space/application/RailsSampleApp/vendor/bundle/ruby/2.5.0/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR="
+compiling cruby.c
+linking shared-object bindex/cruby.bundle
+
+current directory: /Users/tatsuya/rails-space/application/RailsSampleApp/vendor/bundle/ruby/2.5.0/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 cruby.bundle ./.gem.20181004-31844-x6thjp/bindex
