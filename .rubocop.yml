@@ -4,16 +4,16 @@ AllCops:
   Exclude:
     - db/**/*
 
-    Documentation:
-      Enabled: false
-    
-    Style/AsciiComments:
-      Enabled: false
+Documentation:
+  Enabled: false
+  
+Style/AsciiComments:
+  Enabled: false
 
-    Metrics/LineLength:
-      Max: 120
+Metrics/LineLength:
+  Max: 120
 
-    Metrics/BlockLength:
-      Exclude:
-        - spec/**/*
-        - config/**/*
+Metrics/BlockLength:
+  Exclude:
+    - spec/**/*
+    - config/**/*
