@@ -19,8 +19,8 @@
 PreCommit:
   RuboCop:
     enabled: true
-AuthorName:
-  enabled: false
+  AuthorName:
+    enabled: false
 #    on_warn: fail # Treat all warnings as failures
 #
 #  TrailingWhitespace:
