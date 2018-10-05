@@ -28,6 +28,7 @@
 #  avatar_file_size       :bigint(8)
 #  avatar_updated_at      :datetime
 #  posts_count            :integer          default(0), not null
+#  role                   :integer          default(0), not null
 #
 
 class User < ApplicationRecord
@@ -48,6 +49,7 @@ class User < ApplicationRecord
   validate :validate_name
 
   has_many :posts
+  enum role: { user: 0, admin: 1 }
 
   def send_devise_notification(notification, *args)
     devise_mailer.send(notification, self, *args).deliver_later
