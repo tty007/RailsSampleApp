@@ -22,3 +22,7 @@ Metrics/BlockLength:
 #Ruby3.0から文字列リテラルはfeeze
 Style/FrozenStringLiteralComment:
   Enabled: false
+
+Layout/CommentIndentation:
+  Exclude:
+    - app/admin/*
