@@ -26,6 +26,7 @@ gem 'uglifier', '>= 1.3.0'
 # cache
 gem 'bootsnap', '>= 1.1.0', require: false
 # othres
+gem 'activeadmin'
 gem 'counter_culture'
 gem 'devise'
 gem 'kaminari'
