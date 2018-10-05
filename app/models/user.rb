@@ -23,6 +23,10 @@
 #  created_at             :datetime         not null
 #  updated_at             :datetime         not null
 #  name                   :string(255)
+#  avatar_file_name       :string(255)
+#  avatar_content_type    :string(255)
+#  avatar_file_size       :bigint(8)
+#  avatar_updated_at      :datetime
 #
 
 class User < ApplicationRecord
@@ -31,6 +35,10 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable,
          :confirmable, :lockable, :timeoutable
+  has_attached_file :avatar,
+                    styles: { medium: '300x300>', thumb: '100x100>' },
+                    default_url: '/missing.png'
+  validates_attachment_content_type :avatar, content_type: %r{image/.*}
 
   validates :name,
             presence: true,

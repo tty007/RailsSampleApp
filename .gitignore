@@ -31,3 +31,6 @@
 
 #rspec
 /rspec/*
+
+#images(paperclip)
+public/system
