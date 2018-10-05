@@ -46,7 +46,7 @@ class User < ApplicationRecord
   validates_format_of :name, with: /^[a-zA-Z0-9_¥.]*$/, multiline: true
   validate :validate_name
 
-  has_many :posts, inverse_of: :user
+  has_many :posts
 
   def send_devise_notification(notification, *args)
     devise_mailer.send(notification, self, *args).deliver_later
