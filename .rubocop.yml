@@ -18,5 +18,7 @@ Metrics/BlockLength:
     - spec/**/*
     - config/**/*
 
+#Ruby2.3から’# frozen_string_literal: true’マジックコメントを使うと文字列リテラルがfreezeになる
+#Ruby3.0から文字列リテラルはfeeze
 Style/FrozenStringLiteralComment:
   Enabled: false
