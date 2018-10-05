@@ -42,6 +42,9 @@ GEM
       i18n (>= 0.7, < 2)
       minitest (~> 5.1)
       tzinfo (~> 1.1)
+    after_commit_action (1.1.0)
+      activerecord (>= 3.0.0)
+      activesupport (>= 3.0.0)
     annotate (2.7.4)
       activerecord (>= 3.2, < 6.0)
       rake (>= 10.4, < 13.0)
@@ -69,6 +72,10 @@ GEM
     coderay (1.1.2)
     concurrent-ruby (1.0.5)
     connection_pool (2.2.2)
+    counter_culture (2.0.1)
+      activerecord (>= 3.0.0)
+      activesupport (>= 3.0.0)
+      after_commit_action (~> 1.0)
     crass (1.0.4)
     database_cleaner (1.7.0)
     debug_inspector (0.0.3)
@@ -290,6 +297,7 @@ DEPENDENCIES
   bootsnap (>= 1.1.0)
   bootstrap
   byebug
+  counter_culture
   database_cleaner
   devise
   factory_girl_rails
