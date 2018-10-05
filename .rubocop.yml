@@ -17,3 +17,6 @@ Metrics/BlockLength:
   Exclude:
     - spec/**/*
     - config/**/*
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
