@@ -11,4 +11,5 @@ ActiveAdmin.register User do
 #   permitted << :other if params[:action] == 'create' && current_user.admin?
 #   permitted
 # end
+  permit_params { User.attribute_names.map(&:to_sym) }
 end
